@@ -1,10 +1,11 @@
 package com.example.shopping;
 
-import com.example.shopping.domain.Product;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan({"com.example.shopping"})
 public class ShoppingApplication {
 
     public static void main(String[] args) {
