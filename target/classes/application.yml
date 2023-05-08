@@ -1,0 +1,22 @@
+server:
+  port: 7800
+
+spring:
+  datasource:
+    url: jdbc:mysql://169.254.210.47:3306/shopping?serverTimezone=UTC
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  application:
+    name: product
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 169.254.210.47:8848
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml,classpath*:/mapper/**/*.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+

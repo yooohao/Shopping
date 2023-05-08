@@ -1,0 +1,7 @@
+com\example\shopping\domain\Product.class
+com\example\shopping\domain\User.class
+com\example\shopping\mapper\ProductMapper.class
+com\example\shopping\controller\ProductController.class
+com\example\shopping\domain\common\BaseEntity.class
+com\example\shopping\ShoppingApplication.class
+com\example\shopping\service\impl\ProductServiceImpl.class
