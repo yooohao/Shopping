@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 
 @Mapper
-public interface ProductMapper extends BaseMapper<Product> {
+public interface ProductMapper extends BaseMapper<Product> {    //mybatis需要用到Mapper类，mybatis plus不需要用到Mapper类
 
 //    void insert(Product product);
 //

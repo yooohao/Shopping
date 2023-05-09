@@ -19,15 +19,15 @@ import java.math.BigDecimal;
  * @date 2023-05-07 11:45
  */
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
+@AllArgsConstructor //带所有参数的构造器
+@NoArgsConstructor //不带参数的构造器
 @TableName("product")
-public class Product extends BaseEntity {
+public class Product extends BaseEntity{
 
     @TableId(value = "id", type = IdType.AUTO)
     public Long id;
 
-    @TableField(value = "name")
+    @TableField(value = "name") //@TableField表明数据库中的字段, Mybatis Plus中的特性
     public String name;
 
     @TableField(value = "item_num")
@@ -38,6 +38,12 @@ public class Product extends BaseEntity {
 
     @TableField(value = "price")
     public BigDecimal price;
+
+    @TableField(value = "sale_info")
+    public String saleInfo;
+
+    @TableField(value = "sale")
+    public Double sale;
 
     @TableField(value = "brand")
     private String brand;
